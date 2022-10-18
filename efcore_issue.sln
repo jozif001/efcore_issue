@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efcore_issue", "efcore_issue\efcore_issue.csproj", "{84667E52-9723-4A28-A9EF-7EEC53675C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efcore_issue_cli", "efcore_issue_cli\efcore_issue_cli.csproj", "{520D6CD4-DEE1-4DA5-91E3-2792FF6E0286}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84667E52-9723-4A28-A9EF-7EEC53675C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84667E52-9723-4A28-A9EF-7EEC53675C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84667E52-9723-4A28-A9EF-7EEC53675C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84667E52-9723-4A28-A9EF-7EEC53675C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520D6CD4-DEE1-4DA5-91E3-2792FF6E0286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520D6CD4-DEE1-4DA5-91E3-2792FF6E0286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520D6CD4-DEE1-4DA5-91E3-2792FF6E0286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520D6CD4-DEE1-4DA5-91E3-2792FF6E0286}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8A692A9-EA82-45DF-BED9-EEBCC49C1557}
+	EndGlobalSection
+EndGlobal
