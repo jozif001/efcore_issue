@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 namespace efcore_issue
 {
@@ -21,7 +22,7 @@ namespace efcore_issue
         {
             services.AddDbContext<ApplicationDbContext>(optionsBuilder =>
             {
-                optionsBuilder.EnableSensitiveDataLogging();
+                //optionsBuilder.EnableSensitiveDataLogging();
 
                 optionsBuilder.UseSqlServer(
                     "Data Source=DESKTOP-V1V687R;Initial Catalog=EF_CORE_ISSUE;Integrated Security=True",
@@ -38,6 +39,10 @@ namespace efcore_issue
             });
 
             services.AddControllers();
+
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(Configuration)
+                .CreateLogger();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
